@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electro</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <a href="#" id="startSystem">СТАРТ</a>
+    <a href="#"  id="stopSystem">СТОП</a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+</header>
+
+
+<div id="main">
+    <div id = "block1">
+        <div class="tooltip"><p>Ввод с подстанции</p>
+            <span class="tooltiptext">Суммарная мощность: 2 МВт</span>
+        </div>
+    </div>
+    <div id = "block2">
+        <div class="tooltip"><p>Ввод с ГТС</p>
+            <span class="tooltiptext">Суммарная мощность: 1 МВт</span>
+        </div>
+    </div>
+    <div id = "block3"><p>ЭИУ<br>5 Потребителей</p></div>
+    <div id = "block4"><p>Цех 720<br>0 Потребителей</p></div>
+    <div id = "block5"><p>Цех 790<br>0 Потребителей</p></div>
+    <div id = "block6"><p>Цех 711<br>70 Потребителей</p></div>
+    <div id = "block7"><p>Цех 712<br>46 Потребителей</p></div>
+    <div id = "block8"><p>ОКБ-1<br>65 Потребитей</p></div>
+    <div id = "block9"><p>Архив<br>32 Потребителей</p></div>
+    <div id = "block10">
+        <div class="tooltip"><p>Контроллер</p>
+            <span class="tooltiptext">Суммарная мощность: 0.0 Вт</span>
+        </div>
+    </div>
+    <div class="blueColor" id="line1"></div>
+    <div class="blueColor" id="line2"></div>
+    <div class="blueColor" id="line3"></div>
+    <div class="redColor" id="line33"></div>
+    <div class="blueColor" id="line4"></div>
+    <div class="blueColor" id="line41"></div>
+    <div class="blueColor" id="line42"></div>
+    <div class="blueColor" id="line43"></div>
+    <div class="blueColor" id="line44"></div>
+    <div class="blueColor" id="line5"></div>
+    <div class="blueColor" id="line6"></div>
+    <div class="blueColor" id="line7"></div>
+    <div class="blueColor" id="line8"></div>
+    <div class="blueColor" id="line9"></div>
+    <div class="redColor" id="line10"></div>
+    <div class="redColor" id="line11"></div>
+    <div class="redColor" id="line12"></div>
+    <div class="redColor" id="line13"></div>
+    <div class="redColor" id="line14"></div>
+    <div class="redColor" id="line15"></div>
+    <div class="redColor" id="line16"></div>
+    <div class="redColor" id="line17"></div>
+    <div class="redColor" id="line18"></div>
+    <div class="greenColor" id="line19"></div>
+    <div class="greenColor" id="line20"></div>
+</div>
+<div id="sidebar-right">
+    <p>Работа системы автоматики при отключении</p>
+    <ul>
+        <li>Пункт</li>
+        <li>Пункт</li>
+        <li>Пункт</li>
+    </ul>
+</div>
+<footer>
+    <a href="#">Ток: 0.00 А</a>
+    <a href="#">Напряжение: 0.00 В</a>
+    <a href="#">Частота: 0 Гц</a>
+    <a href="#">Мощность генератора: 0.00 Вт</a>
+    <a href="#">Мощность приемников: 0.00 Вт</a>
+    <a href="#">Количетсво и приоритет потребителя: 0</a>
+
+</footer>
+<div id="modal_form">
+    <span id="modal_close">&#10008;</span>
+    <table>
+        <tbody>
+        <tr>
+            <th>№</th>
+            <th>Инвентарный номер</th>
+            <th>Наименование установки</th>
+            <th>Мощность (кВт)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ВМ-75</td>
+            <td>В51</td>
+            <td>1,1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ВМ-145</td>
+            <td>В19</td>
+            <td>2,8</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ВМ-181</td>
+            <td>В53</td>
+            <td>0,8</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>ВМ-182</td>
+            <td>В10</td>
+            <td>1,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>ВМ-183</td>
+            <td>В16</td>
+            <td>0,8</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>ВМ-184</td>
+            <td>В18</td>
+            <td>1,7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>ВМ-248</td>
+            <td>T31</td>
+            <td>20</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>ВМ-249</td>
+            <td>В</td>
+            <td>1,7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>ВМ-255</td>
+            <td>T33</td>
+            <td>20</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>ВМ-256</td>
+            <td>T32</td>
+            <td>10</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>ВМ-257</td>
+            <td>T34</td>
+            <td>10</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>ВМ-258</td>
+            <td>П1</td>
+            <td>20</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>ВМ-259</td>
+            <td>П2</td>
+            <td>10</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>ВМ-260</td>
+            <td>П3</td>
+            <td>20</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>ВМ-261</td>
+            <td>П4</td>
+            <td>22</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>ВМ-263</td>
+            <td>П6</td>
+            <td>7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>ВМ-264</td>
+            <td>П7</td>
+            <td>0,6</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>ВМ-265</td>
+            <td>П8</td>
+            <td>11</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>ВМ-266</td>
+            <td>П9</td>
+            <td>1,1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>ВМ-267</td>
+            <td>П10</td>
+            <td>1,7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>ВМ-268</td>
+            <td>П11</td>
+            <td>10</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>ВМ-269</td>
+            <td>В</td>
+            <td>4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>ВМ-270</td>
+            <td>П13</td>
+            <td>7,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>ВМ-306</td>
+            <td>В1</td>
+            <td>2,8</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>ВМ-307</td>
+            <td>В2</td>
+            <td>1,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>ВМ-308</td>
+            <td>В3</td>
+            <td>11</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>ВМ-309</td>
+            <td>В4</td>
+            <td>1/td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>ВМ-310</td>
+            <td>В5</td>
+            <td>7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>ВМ-311</td>
+            <td>В6</td>
+            <td>4,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>ВМ-313</td>
+            <td>В8</td>
+            <td>4,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>ВМ-314</td>
+            <td>В9</td>
+            <td>1,7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>ВМ-316</td>
+            <td>В54</td>
+            <td>3</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>ВМ-317</td>
+            <td>В12</td>
+            <td>1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>ВМ-318</td>
+            <td>В</td>
+            <td>4,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>ВМ-319</td>
+            <td>В</td>
+            <td>4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>ВМ-320</td>
+            <td>В23</td>
+            <td>1,7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>ВМ-321</td>
+            <td>В</td>
+            <td>4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>ВМ-322</td>
+            <td>В22</td>
+            <td>0,8</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>ВМ-323</td>
+            <td>В23</td>
+            <td>1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>ВМ-324</td>
+            <td>В25</td>
+            <td>0,4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>ВМ-327</td>
+            <td>В11</td>
+            <td>1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>ВМ-328</td>
+            <td>В14</td>
+            <td>0,8</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>ВМ-329</td>
+            <td>В</td>
+            <td>4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>ВМ-352</td>
+            <td>В</td>
+            <td>1,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>ВМ-369</td>
+            <td>П12</td>
+            <td>4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>ВМ-387</td>
+            <td>В52</td>
+            <td>3</td>
+            <td>&#10006;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="modal_form711">
+    <span id="modal_close711">&#10008;</span>
+    <table>
+        <tbody>
+        <tr>
+            <th>№</th>
+            <th>Инвентарный номер</th>
+            <th>Наименование установки</th>
+            <th>Мощность (кВт)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Генератор высокочастотный транзисторный </td>
+            <td>-</td>
+            <td>25</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Станок для гибки труб</td>
+            <td>OP</td>
+            <td>2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Зинковочный станок</td>
+            <td>ОР-1392</td>
+            <td>0,6</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Сверлильный станок </td>
+            <td>СВ-50</td>
+            <td>0,6</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Станок </td>
+            <td>П-1-0037</td>
+            <td>1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Сверлильный станок </td>
+            <td>СВ-1361</td>
+            <td>0,4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Наждак (станок заточной)</td>
+            <td>-</td>
+            <td>1,1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Абразивный-отрезной станок </td>
+            <td>ОР-021 </td>
+            <td>2,2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Полировальная бабка с электродвигателем </td>
+            <td>ПЛ-38</td>
+            <td>1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Калорифер</td>
+            <td>-</td>
+            <td>1,4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Сварочный аппарат </td>
+            <td>СА-1650</td>
+            <td>5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Размагничиватель деталей </td>
+            <td>КР-01</td>
+            <td>0,2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Токарно-винторезный станок</td>
+            <td>ТВ-146 1К625</td>
+            <td>12</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Токарно-винторезный станок </td>
+            <td>ТВ-109 мод. 1Е61</td>
+            <td>4,75</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Плоско-шлифовальный станок </td>
+            <td>ШП-623</td>
+            <td>4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Универсальный фрезерный станок</td>
+            <td>ФУ-42 мод.675</td>
+            <td>1,1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Универсальный фрезерный станок </td>
+            <td>ФУ-56</td>
+            <td>2,3</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Долбежный станок</td>
+            <td>ДШ-2 </td>
+            <td>2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Вертикально-сверлильный станок</td>
+            <td>ОР-90</td>
+            <td>0,55</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Вертикально-сверлильный станок</td>
+            <td>-</td>
+            <td>1,1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Наждак (станок заточной) </td>
+            <td>ЗТ(П)-10</td>
+            <td>1,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Вертикально-сверлильный станок</td>
+            <td>Вертикально-сверлильный станок</td>
+            <td>3,4-4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Электропечь </td>
+            <td>-</td>
+            <td>10</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Электропечь </td>
+            <td>-</td>
+            <td>10</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Балансировочный станок </td>
+            <td>Б-2021 ДБ-50А</td>
+            <td>1,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Балансировочный станок </td>
+            <td>Б-2022 ДБ-50А</td>
+            <td>1,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Балансировочный станок </td>
+            <td>Б-2023 ДБ-50А</td>
+            <td>1,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Балансировочный станок </td>
+            <td>ОР-201 ДБ-10</td>
+            <td>1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Балансировочный станок </td>
+            <td>ОР-9344 ДБ-303А</td>
+            <td>11</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Балансировочный станок </td>
+            <td>ОР-231 ДБ-101</td>
+            <td>3,2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Шкаф сушильный</td>
+            <td>ОР-5817</td>
+            <td>0,253</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Шкаф сушильный</td>
+            <td>ОР-5838</td>
+            <td>0,253</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Нагреватель </td>
+            <td>712-0717 </td>
+            <td>2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Балансировочный станок </td>
+            <td>ОР-24 БСД-4</td>
+            <td>7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Электропечь (Печь круглая) </td>
+            <td>6357/169,712-002</td>
+            <td>9</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Тепловентилятор</td>
+            <td>ВМ-194</td>
+            <td>0,3</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Стенд сборки двигателя </td>
+            <td>712-300, 0744.163.00</td>
+            <td>5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Тепловентилятор</td>
+            <td>ТВ№3</td>
+            <td>1,05</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Маслопрокачная установка </td>
+            <td>100.1056.000.000</td>
+            <td>9,1-9,4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Тепловентилятор </td>
+            <td>-</td>
+            <td>1,8</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Кран подвесной </td>
+            <td>421 г/п 2т</td>
+            <td>7,2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Кран подвесной </td>
+            <td>421 г/п 2т</td>
+            <td>3,6</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>Кран подвесной </td>
+            <td>2т 422</td>
+            <td>3,6</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>Кран подвесной </td>
+            <td>2т 422</td>
+            <td>3,6</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>Кранбалка </td>
+            <td>5т+2т 419 </td>
+            <td>12,4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Кран балка с электро тельфером</td>
+            <td>5т 424</td>
+            <td>8,2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>Кран балка с электро тельфером</td>
+            <td>5т 425</td>
+            <td>8,2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>Кран балка с электро тельфером</td>
+            <td>5т 426</td>
+            <td>8,2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>Кран штабелер </td>
+            <td>462</td>
+            <td>1,1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>Кран штабелер </td>
+            <td>162</td>
+            <td>1,1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Кран штабелер </td>
+            <td>341</td>
+            <td>1,1</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>Электротельфер </td>
+            <td>428</td>
+            <td>1,9</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>52</td>
+            <td>Электротельфер </td>
+            <td>429</td>
+            <td>1,9</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>53</td>
+            <td>Электротельфер </td>
+            <td>427</td>
+            <td>1,9</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>54</td>
+            <td>Электротельфер </td>
+            <td>451</td>
+            <td>1,2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>55</td>
+            <td>Кран мостовой </td>
+            <td>418 г/п 10т</td>
+            <td>15,3</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>56</td>
+            <td>Пресс гидравлический </td>
+            <td>П-829</td>
+            <td>1,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>57</td>
+            <td>Маслопрокачка </td>
+            <td>T-19</td>
+            <td>6,3</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>58</td>
+            <td>Маслопрокачка </td>
+            <td>ИУ0700-078</td>
+            <td>7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>59</td>
+            <td>Маслопрокачка </td>
+            <td>Т-802А</td>
+            <td>8</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>60</td>
+            <td>Нагнетатель </td>
+            <td>6364/62</td>
+            <td>5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td>Установка для гидроиспытанийкерасином </td>
+            <td>УК 2 15-000</td>
+            <td>7</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>61</td>
+            <td>Система разогрева мочевины </td>
+            <td>ППГ-1</td>
+            <td>5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>62</td>
+            <td>Пресс </td>
+            <td>Пресс </td>
+            <td>2,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>63</td>
+            <td>Печь </td>
+            <td>760 288 000 00</td>
+            <td>10</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>64</td>
+            <td>Выпрямитель</td>
+            <td>-</td>
+            <td>3</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>Компрессор №1 </td>
+            <td>ДЭН 18Ш</td>
+            <td>12</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>66</td>
+            <td>Компрессор №2 </td>
+            <td>ДЭН 18Ш</td>
+            <td>12</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>67</td>
+            <td>Маслопрокачная установка </td>
+            <td>700.1261.000.00 ОР-5859</td>
+            <td>6,5</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>68</td>
+            <td>Маслопрокачная установка </td>
+            <td>-</td>
+            <td>4</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td>Рентген аппарат </td>
+            <td>РА-1</td>
+            <td>2</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td>Освещение </td>
+            <td>-</td>
+            <td>117,4</td>
+            <td>&#10006;</td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</div>
+<div id="modal_formOKB">
+    <span id="modal_closeOKB">&#10008;</span>
+    <table>
+        <tbody>
+        <tr>
+            <th>№</th>
+            <th>Инвентарный номер</th>
+            <th>Наименование установки</th>
+            <th>Мощность (кВт)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Освещение </td>
+            <td>-</td>
+            <td>72</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Розетки</td>
+            <td>-</td>
+            <td>300</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Кондиционирование </td>
+            <td>-</td>
+            <td>90</td>
+            <td>&#10006;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="modal_formARH">
+    <span id="modal_closeARH">&#10008;</span>
+    <table>
+        <tbody>
+        <tr>
+            <th>№</th>
+            <th>Инвентарный номер</th>
+            <th>Наименование установки</th>
+            <th>Мощность (кВт)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Освещение </td>
+            <td>-</td>
+            <td>12</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Розетки</td>
+            <td>-</td>
+            <td>9</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Кондиционирование </td>
+            <td>-</td>
+            <td>18</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Мастерская под архивом </td>
+            <td>-</td>
+            <td>40</td>
+            <td>&#10006;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="modal_formIEU">
+    <span id="modal_closeIEU">&#10008;</span>
+    <table>
+        <tbody>
+        <tr>
+            <th>№</th>
+            <th>Инвентарный номер</th>
+            <th>Наименование установки</th>
+            <th>Мощность (кВт)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Освещение </td>
+            <td>-</td>
+            <td>120</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Стенд 1</td>
+            <td>-</td>
+            <td>40</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Стенд 2 </td>
+            <td>-</td>
+            <td>10</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Стенд 3 </td>
+            <td>-</td>
+            <td>15</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Стенд 4 </td>
+            <td>-</td>
+            <td>70</td>
+            <td>&#10006;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="modal_form720">
+    <span id="modal_close720">&#10008;</span>
+    <table>
+        <tbody>
+        <tr>
+            <th>№</th>
+            <th>Инвентарный номер</th>
+            <th>Наименование установки</th>
+            <th>Мощность (кВт)</th>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+        </tbody>
+    </table>
+</div>
+<div id="modal_form790">
+    <span id="modal_close790">&#10008;</span>
+    <table>
+        <tbody>
+        <tr>
+            <th>№</th>
+            <th>Инвентарный номер</th>
+            <th>Наименование установки</th>
+            <th>Мощность (кВт)</th>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>&#10006;</td>
+        </tr>
+        <tr>
+        </tbody>
+    </table>
+</div>
+<div id="overlay"></div>
+</body>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+</html>

@@ -28,6 +28,7 @@ header a, footer a{
 footer a{
     font-size: 16px;
 }
+
 header a:hover, footer a:hover{
     background-color: lightgray;
 }
@@ -376,3 +377,23 @@ footer{
 #modal_form790 table tr:nth-child(even){
     background-color: #e9e3e9;
 }
+
+#instruction p,#sucessStart div,#sucessStop div{
+    padding: 10px;
+    border-bottom:1px dotted black;
+    font-size:16px;
+    font-weight:bold;
+    text-align: center;
+}
+#instruction p:last-child,#sucessStart div:last-child,#sucessStop div:last-child{
+    border:none;
+}
+#sucessStart div,#sucessStop div{
+    padding:15px;
+}
+
+#sucessStart0,#sucessStart1,#sucessStart2,#sucessStart3,#sucessStart4,#sucessStart5,#sucessStart6,
+#sucessStop0,#sucessStop1,#sucessStop2,#sucessStop3,#sucessStop4{
+    display: none;
+}
+

@@ -9,9 +9,6 @@
 <header>
     <a href="#" id="startSystem">СТАРТ</a>
     <a href="#"  id="stopSystem">СТОП</a>
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
 </header>
 
 
@@ -65,20 +62,62 @@
     <div class="greenColor" id="line20"></div>
 </div>
 <div id="sidebar-right">
-    <p>Работа системы автоматики при отключении</p>
-    <ul>
-        <li>Пункт</li>
-        <li>Пункт</li>
-        <li>Пункт</li>
-    </ul>
+    <div id="instruction">
+
+        <p>Наименования действий:</p>
+            <p>СТАРТ - для обычного старта системы</p>
+            <p>СТОП - для обычной остановки системы</p>
+
+
+    </div>
+    <div id="sucessStart">
+
+            <div id ="sucessStart0"><b>СТАРТ СИСТЕМЫ<br>
+                Выполняемые действия:</b></div>
+
+            <div id="sucessStart1">Включение генераторов<br>
+            <progress value="0" max="100" id="startOneBar"></progress> </div>
+
+
+            <div id="sucessStart2">Подача питания<br>
+                <progress value="0" max="100" id="startTwoBar"></progress></div>
+
+            <div id="sucessStart3">Подключение потребителей<br>
+                <progress value="0" max="100" id="startThreeBar"></progress></div>
+
+            <div id="sucessStart4">Сбор общих данных<br>
+                <progress value="0" max="100" id="startForBar"></progress></div>
+
+            <div id="sucessStart5">Вычисление текущих знаений<br>
+                <progress value="0" max="90" id="startFiveBar"></progress></div>
+
+            <div id ="sucessStart6">Система запущена</div>
+    </div>
+    <div id="sucessStop">
+
+        <div id ="sucessStop0"><b>ОСТАНОВКА СИСТЕМЫ<br>
+            Выполняемые действия:</b></div>
+
+        <div id="sucessStop1">Вычисление параметров процесса отключения<br>
+            <progress value="0" max="100" id="stopOneBar"></progress> </div>
+
+
+        <div id="sucessStop2">Прогресс снижения мощности <br>
+            <progress value="0" max="100" id="stopTwoBar"></progress></div>
+
+        <div id="sucessStop3">Остановка генераторов<br>
+            <progress value="0" max="100" id="stopThreeBar"></progress></div>
+
+        <div id ="sucessStop4">Система остановлена</div>
+    </div>
 </div>
 <footer>
-    <a href="#">Ток: 0.00 А</a>
-    <a href="#">Напряжение: 0.00 В</a>
-    <a href="#">Частота: 0 Гц</a>
-    <a href="#">Мощность генератора: 0.00 Вт</a>
-    <a href="#">Мощность приемников: 0.00 Вт</a>
-    <a href="#">Количетсво и приоритет потребителя: 0</a>
+    <a href="#" id="toc">Ток:</a>
+    <a href="#">Напряжение:</a>
+    <a href="#">Частота:</a>
+    <a href="#">Мощность генератора:</a>
+    <a href="#">Мощность приемников:</a>
+    <a href="#">Количетсво и приоритет потребителя:</a>
 
 </footer>
 <div id="modal_form">

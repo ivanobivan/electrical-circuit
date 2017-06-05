@@ -1,11 +1,64 @@
+
+
 $(document).ready(function () {
     var timerId;
+    var w;
+    function timerGlobal(string) {
+        var timer = setInterval(function () {
+            document.getElementById(string).value +=1;
+            if( document.getElementById(string).value ===100){
+                clearInterval(timer);
+            }
+        },10);
+    }
+    function clearValue(string) {
+        document.getElementById(string).value = 0;
+    }
+
     $("#startSystem").click(function () {
-        timerId = setInterval(circle,800);
+
+        $("#instruction").hide(200);
+
+        $("#sucessStart0").show(400,function () {
+            $(this).next().show(1000,arguments.callee);
+        });
+
+        setTimeout(timerGlobal,1200,'startOneBar');
+        setTimeout(timerGlobal,2400,'startTwoBar');
+        setTimeout(timerGlobal,3600,'startThreeBar');
+        setTimeout(timerGlobal,4800,'startForBar');
+        setTimeout(timerGlobal,6000,'startFiveBar');
+        
+
+        function prom(){
+            timerId = setInterval(circle,800);
+        }
+        setTimeout(prom,6500);
+
     });
+
     $("#stopSystem").click(function () {
+        $("#sucessStart").hide();
+        $("#instruction").hide();
+        clearValue("startOneBar");
+        clearValue("startTwoBar");
+        clearValue("startThreeBar");
+        clearValue("startForBar");
+        clearValue("startFiveBar");
+        clearTimeout();
+        $("#sucessStop0").show(400,function () {
+            $(this).next().show(1000,arguments.callee);
+        });
+        setTimeout(timerGlobal,1200,'stopOneBar');
+        setTimeout(timerGlobal,2400,'stopTwoBar');
+        setTimeout(timerGlobal,3600,'stopThreeBar');
+
+
         clearInterval(timerId);
+
     });
+
+
 
     function circle() {
 
@@ -179,3 +232,4 @@ $(document).ready(function () {
     });
 
 });
+

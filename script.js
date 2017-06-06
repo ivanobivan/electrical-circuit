@@ -23,12 +23,15 @@ $(document).ready(function () {
             $(this).next().show(1000,arguments.callee);
         });
 
+        $("#stopPos").css({"display":"none"});
+        $("#startPos").show(9000);
         setTimeout(timerGlobal,1200,'startOneBar');
         setTimeout(timerGlobal,2400,'startTwoBar');
         setTimeout(timerGlobal,3600,'startThreeBar');
         setTimeout(timerGlobal,4800,'startForBar');
         setTimeout(timerGlobal,6000,'startFiveBar');
-        
+
+
 
         function prom(){
             timerId = setInterval(circle,800);
@@ -53,7 +56,8 @@ $(document).ready(function () {
         setTimeout(timerGlobal,2400,'stopTwoBar');
         setTimeout(timerGlobal,3600,'stopThreeBar');
 
-
+        $("#startPos").css({"display":"none"});
+        $("#stopPos").show(3000);
         clearInterval(timerId);
 
     });
